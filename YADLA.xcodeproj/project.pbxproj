@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A2BC7C238C3A6A0060FC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2BC7B238C3A6A0060FC80 /* AppDelegate.swift */; };
+		04A2BC7E238C3A6A0060FC80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2BC7D238C3A6A0060FC80 /* SceneDelegate.swift */; };
+		04A2BC83238C3A6A0060FC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A2BC81238C3A6A0060FC80 /* Main.storyboard */; };
+		04A2BC85238C3A6C0060FC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A2BC84238C3A6C0060FC80 /* Assets.xcassets */; };
+		04A2BC88238C3A6C0060FC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A2BC86238C3A6C0060FC80 /* LaunchScreen.storyboard */; };
+		04A2BC90238C3AA90060FC80 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2BC8F238C3AA90060FC80 /* MainTableViewController.swift */; };
+		04A2BC95238C3B270060FC80 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2BC93238C3B270060FC80 /* CustomTableViewCell.swift */; };
+		04A2BC96238C3B270060FC80 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A2BC94238C3B270060FC80 /* CustomTableViewCell.xib */; };
+		04A2BC98238C3B810060FC80 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2BC97238C3B810060FC80 /* DateViewController.swift */; };
+		04E3BAD1238C438E00653FDA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E3BAD0238C438E00653FDA /* NotificationCenter.framework */; };
+		04E3BAD4238C438E00653FDA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3BAD3238C438E00653FDA /* TodayViewController.swift */; };
+		04E3BAD7238C438E00653FDA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E3BAD5238C438E00653FDA /* MainInterface.storyboard */; };
+		04E3BADB238C438E00653FDA /* TodayExtensionYADLA.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04E3BACE238C438E00653FDA /* TodayExtensionYADLA.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04E3BAE2238C43F600653FDA /* CustomWidgetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3BAE0238C43F600653FDA /* CustomWidgetTableCell.swift */; };
+		04E3BAE3238C43F600653FDA /* CustomWidgetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E3BAE1238C43F600653FDA /* CustomWidgetTableCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04E3BAD9238C438E00653FDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A2BC70238C3A6A0060FC80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E3BACD238C438E00653FDA;
+			remoteInfo = TodayExtensionYACTA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04E3BADC238C438E00653FDA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04E3BADB238C438E00653FDA /* TodayExtensionYADLA.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		043DE6E7238C479E001E31F6 /* YACTA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YACTA.entitlements; sourceTree = "<group>"; };
+		043DE6E8238C4851001E31F6 /* TodayExtensionYACTA.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayExtensionYACTA.entitlements; sourceTree = "<group>"; };
+		04A2BC78238C3A6A0060FC80 /* YADLA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YADLA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A2BC7B238C3A6A0060FC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04A2BC7D238C3A6A0060FC80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04A2BC82238C3A6A0060FC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04A2BC84238C3A6C0060FC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A2BC87238C3A6C0060FC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A2BC89238C3A6C0060FC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A2BC8F238C3AA90060FC80 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		04A2BC93238C3B270060FC80 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		04A2BC94238C3B270060FC80 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		04A2BC97238C3B810060FC80 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		04E3BACE238C438E00653FDA /* TodayExtensionYADLA.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtensionYADLA.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E3BAD0238C438E00653FDA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		04E3BAD3238C438E00653FDA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		04E3BAD6238C438E00653FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		04E3BAD8238C438E00653FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E3BAE0238C43F600653FDA /* CustomWidgetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWidgetTableCell.swift; sourceTree = "<group>"; };
+		04E3BAE1238C43F600653FDA /* CustomWidgetTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomWidgetTableCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A2BC75238C3A6A0060FC80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E3BACB238C438E00653FDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E3BAD1238C438E00653FDA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A2BC6F238C3A6A0060FC80 = {
+			isa = PBXGroup;
+			children = (
+				04A2BC7A238C3A6A0060FC80 /* YADLA */,
+				04E3BAD2238C438E00653FDA /* TodayExtensionYADLA */,
+				04E3BACF238C438E00653FDA /* Frameworks */,
+				04A2BC79238C3A6A0060FC80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04A2BC79238C3A6A0060FC80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A2BC78238C3A6A0060FC80 /* YADLA.app */,
+				04E3BACE238C438E00653FDA /* TodayExtensionYADLA.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04A2BC7A238C3A6A0060FC80 /* YADLA */ = {
+			isa = PBXGroup;
+			children = (
+				043DE6E7238C479E001E31F6 /* YACTA.entitlements */,
+				04A2BC7B238C3A6A0060FC80 /* AppDelegate.swift */,
+				04A2BC8F238C3AA90060FC80 /* MainTableViewController.swift */,
+				04A2BC97238C3B810060FC80 /* DateViewController.swift */,
+				04A2BC7D238C3A6A0060FC80 /* SceneDelegate.swift */,
+				04A2BC93238C3B270060FC80 /* CustomTableViewCell.swift */,
+				04A2BC94238C3B270060FC80 /* CustomTableViewCell.xib */,
+				04A2BC81238C3A6A0060FC80 /* Main.storyboard */,
+				04A2BC84238C3A6C0060FC80 /* Assets.xcassets */,
+				04A2BC86238C3A6C0060FC80 /* LaunchScreen.storyboard */,
+				04A2BC89238C3A6C0060FC80 /* Info.plist */,
+			);
+			path = YADLA;
+			sourceTree = "<group>";
+		};
+		04E3BACF238C438E00653FDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E3BAD0238C438E00653FDA /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04E3BAD2238C438E00653FDA /* TodayExtensionYADLA */ = {
+			isa = PBXGroup;
+			children = (
+				043DE6E8238C4851001E31F6 /* TodayExtensionYACTA.entitlements */,
+				04E3BAD3238C438E00653FDA /* TodayViewController.swift */,
+				04E3BAE0238C43F600653FDA /* CustomWidgetTableCell.swift */,
+				04E3BAE1238C43F600653FDA /* CustomWidgetTableCell.xib */,
+				04E3BAD5238C438E00653FDA /* MainInterface.storyboard */,
+				04E3BAD8238C438E00653FDA /* Info.plist */,
+			);
+			path = TodayExtensionYADLA;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04A2BC77238C3A6A0060FC80 /* YADLA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A2BC8C238C3A6C0060FC80 /* Build configuration list for PBXNativeTarget "YADLA" */;
+			buildPhases = (
+				04A2BC74238C3A6A0060FC80 /* Sources */,
+				04A2BC75238C3A6A0060FC80 /* Frameworks */,
+				04A2BC76238C3A6A0060FC80 /* Resources */,
+				04E3BADC238C438E00653FDA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E3BADA238C438E00653FDA /* PBXTargetDependency */,
+			);
+			name = YADLA;
+			productName = YACTA;
+			productReference = 04A2BC78238C3A6A0060FC80 /* YADLA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04E3BACD238C438E00653FDA /* TodayExtensionYADLA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E3BADF238C438E00653FDA /* Build configuration list for PBXNativeTarget "TodayExtensionYADLA" */;
+			buildPhases = (
+				04E3BACA238C438E00653FDA /* Sources */,
+				04E3BACB238C438E00653FDA /* Frameworks */,
+				04E3BACC238C438E00653FDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtensionYADLA;
+			productName = TodayExtensionYACTA;
+			productReference = 04E3BACE238C438E00653FDA /* TodayExtensionYADLA.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04A2BC70238C3A6A0060FC80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Gera Volobuev";
+				TargetAttributes = {
+					04A2BC77238C3A6A0060FC80 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					04E3BACD238C438E00653FDA = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 04A2BC73238C3A6A0060FC80 /* Build configuration list for PBXProject "YADLA" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04A2BC6F238C3A6A0060FC80;
+			productRefGroup = 04A2BC79238C3A6A0060FC80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04A2BC77238C3A6A0060FC80 /* YADLA */,
+				04E3BACD238C438E00653FDA /* TodayExtensionYADLA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04A2BC76238C3A6A0060FC80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A2BC88238C3A6C0060FC80 /* LaunchScreen.storyboard in Resources */,
+				04A2BC85238C3A6C0060FC80 /* Assets.xcassets in Resources */,
+				04A2BC96238C3B270060FC80 /* CustomTableViewCell.xib in Resources */,
+				04A2BC83238C3A6A0060FC80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E3BACC238C438E00653FDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E3BAD7238C438E00653FDA /* MainInterface.storyboard in Resources */,
+				04E3BAE3238C43F600653FDA /* CustomWidgetTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A2BC74238C3A6A0060FC80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A2BC98238C3B810060FC80 /* DateViewController.swift in Sources */,
+				04A2BC7C238C3A6A0060FC80 /* AppDelegate.swift in Sources */,
+				04A2BC90238C3AA90060FC80 /* MainTableViewController.swift in Sources */,
+				04A2BC95238C3B270060FC80 /* CustomTableViewCell.swift in Sources */,
+				04A2BC7E238C3A6A0060FC80 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E3BACA238C438E00653FDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E3BAD4238C438E00653FDA /* TodayViewController.swift in Sources */,
+				04E3BAE2238C43F600653FDA /* CustomWidgetTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E3BADA238C438E00653FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E3BACD238C438E00653FDA /* TodayExtensionYADLA */;
+			targetProxy = 04E3BAD9238C438E00653FDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04A2BC81238C3A6A0060FC80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A2BC82238C3A6A0060FC80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04A2BC86238C3A6C0060FC80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A2BC87238C3A6C0060FC80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04E3BAD5238C438E00653FDA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E3BAD6238C438E00653FDA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04A2BC8A238C3A6C0060FC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04A2BC8B238C3A6C0060FC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04A2BC8D238C3A6C0060FC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YACTA/YACTA.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW6HFQMW7T;
+				INFOPLIST_FILE = YADLA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YACTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04A2BC8E238C3A6C0060FC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = YACTA/YACTA.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW6HFQMW7T;
+				INFOPLIST_FILE = YADLA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YACTA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		04E3BADD238C438E00653FDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtensionYACTA/TodayExtensionYACTA.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW6HFQMW7T;
+				INFOPLIST_FILE = TodayExtensionYADLA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YACTA.TodayExtensionYACTA;
+				PRODUCT_NAME = TodayExtensionYADLA;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04E3BADE238C438E00653FDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtensionYACTA/TodayExtensionYACTA.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PW6HFQMW7T;
+				INFOPLIST_FILE = TodayExtensionYADLA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.YACTA.TodayExtensionYACTA;
+				PRODUCT_NAME = TodayExtensionYADLA;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04A2BC73238C3A6A0060FC80 /* Build configuration list for PBXProject "YADLA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A2BC8A238C3A6C0060FC80 /* Debug */,
+				04A2BC8B238C3A6C0060FC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A2BC8C238C3A6C0060FC80 /* Build configuration list for PBXNativeTarget "YADLA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A2BC8D238C3A6C0060FC80 /* Debug */,
+				04A2BC8E238C3A6C0060FC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E3BADF238C438E00653FDA /* Build configuration list for PBXNativeTarget "TodayExtensionYADLA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E3BADD238C438E00653FDA /* Debug */,
+				04E3BADE238C438E00653FDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04A2BC70238C3A6A0060FC80 /* Project object */;
+}

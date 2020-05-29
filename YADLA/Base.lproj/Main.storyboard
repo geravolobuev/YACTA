@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5eF-Sp-a9f">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Table View Controller-->
+        <scene sceneID="qwc-vd-StC">
+            <objects>
+                <tableViewController id="DQH-Gv-FjD" customClass="MainTableViewController" customModule="YACTA" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vZE-Mw-9Bu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f2N-NN-rTP" customClass="CustomTableViewCell" customModule="YACTA" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f2N-NN-rTP" id="FvB-JA-oAk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DQH-Gv-FjD" id="eSP-mS-mCQ"/>
+                            <outlet property="delegate" destination="DQH-Gv-FjD" id="zaF-LW-yRm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="XZH-gv-VHJ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EmP-ko-dVd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489.85507246376818" y="10.714285714285714"/>
+        </scene>
+        <!--Date View Controller-->
+        <scene sceneID="MEM-fK-gB7">
+            <objects>
+                <viewController storyboardIdentifier="Date" id="V91-OJ-4qT" customClass="DateViewController" customModule="YACTA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mwh-nD-cIr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-3h-bG0">
+                                <rect key="frame" x="0.0" y="41" width="375" height="216"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gC3-vI-hrs">
+                                <rect key="frame" x="128" y="309" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ark-zR-uhh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gC3-vI-hrs" firstAttribute="leading" secondItem="JFy-jc-fxI" secondAttribute="leading" constant="128" id="0Br-VK-4Lx"/>
+                            <constraint firstItem="Q5u-3h-bG0" firstAttribute="centerX" secondItem="gC3-vI-hrs" secondAttribute="centerX" id="3Ks-VL-VWr"/>
+                            <constraint firstItem="Q5u-3h-bG0" firstAttribute="leading" secondItem="JFy-jc-fxI" secondAttribute="leading" id="Hrv-WG-a5X"/>
+                            <constraint firstItem="Q5u-3h-bG0" firstAttribute="top" secondItem="JFy-jc-fxI" secondAttribute="top" constant="41" id="VdG-Ds-1Hv"/>
+                            <constraint firstItem="Q5u-3h-bG0" firstAttribute="centerX" secondItem="mwh-nD-cIr" secondAttribute="centerX" id="bac-pM-Odi"/>
+                            <constraint firstItem="gC3-vI-hrs" firstAttribute="top" secondItem="Q5u-3h-bG0" secondAttribute="bottom" constant="52" id="geT-bR-DAL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JFy-jc-fxI"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="Q5u-3h-bG0" id="7kT-Vy-gTa"/>
+                        <outlet property="reminderText" destination="gC3-vI-hrs" id="nR5-T1-bAd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsV-X8-1va" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456" y="15"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a6f-hY-FJe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5eF-Sp-a9f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qYY-kA-WRe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.99607843139999996" green="0.37647058820000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DQH-Gv-FjD" kind="relationship" relationship="rootViewController" id="Eb2-Oa-aRZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqv-aL-4Nn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420.28985507246381" y="10.714285714285714"/>
+        </scene>
+    </scenes>
+</document>
